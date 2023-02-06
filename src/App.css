@@ -1,0 +1,61 @@
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+.navbar{
+  color: white !important;
+}
+
+.bannerImage{
+  width: 450px;
+}
+.navbar-logo{
+  width: 11vw ;
+}
+.abcd{
+  max-width: 100vw;
+  display: block;
+  width: 100%;
+  /* height: 250px; */
+}
+ .custom-banner-image{
+  background-image: url('https://www.unitedsol.net/wp-content/uploads/2021/06/banner.webp ');
+  height: '80vh' !important;
+}
+
+  .maintxt {
+    background-image: url('https://www.unitedsol.net/wp-content/uploads/2021/06/banner.webp');
+    background-size: cover;
+}
+
+.maintxt {position: relative;}
+.maintxt > img, .overlay-text {position: absolute;}
+
+
+
+@media only screen and (max-width: 1440px) {
+  .bg-overlay {
+    height: 50vh;
+  }
+}
+
+/* .services-main-container{
+  background-color: rgba(8, 8, 8, 0.7);
+} */
+
+.contain-cards{
+  gap: 1rem;
+}
+
+.bg-overlay {
+  background: url("https://www.unitedsol.net/wp-content/uploads/2021/06/banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* color: #fff; */
+  height: 64vh;
+
+  /* height: 450px;
+  padding-top: 50px; */
+}
