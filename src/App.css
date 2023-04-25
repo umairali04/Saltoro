@@ -1,3 +1,8 @@
+body {
+  /* font-family: 'Poppins'; */
+  font-family: 'Montserrat', sans-serif;
+}
+
 .flex{
   display: flex;
   justify-content: center;
@@ -55,7 +60,63 @@
   background-position: center center;
   /* color: #fff; */
   height: 64vh;
+  margin-top: 50px !important;
+  /* height: 450px; */
+  /* padding-top: 50px; */
+}
 
-  /* height: 450px;
-  padding-top: 50px; */
+@media only screen and (max-width: 500px) {
+  .bg-overlay {
+    background: none;
+  }
+}
+
+.footer-logo{
+  width: 10rem;
+}
+
+.button{
+  font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    fill: var(--e-global-color-secondary );
+    color: var(--e-global-color-secondary );
+    background-color: #7198CB00;
+    border-style: solid;
+    border-width: 1.5px 1.5px 1.5px 1.5px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 15px 40px 15px 40px;
+    border-color: grey;
+}
+
+button:hover{
+  color: white;
+    background-color: #527ab5;
+    border-color: #527ab5;
+}
+
+.arrow-img:hover{
+  color: white;
+}
+
+.card-logo{
+  width: 11rem;
+}
+
+.companies-logo{
+  width: 15rem;
+}
+
+.hoverZoom-box{
+  transition: transform .2s;
+  z-index: 10;
+}
+
+.hoverZoom-box:hover {
+  transform: scale(1.05);
+  background-color: #f8fafd;
+}
+
+.textArea{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
