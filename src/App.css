@@ -58,9 +58,9 @@ body {
 .navbar-toggler:focus{
   outline: none !important;
 }
-.navbar-collapse{
+/* .navbar-collapse{
   background-color: white !important;
-}
+} */
 
 button:hover{
   background-color: none !important;
