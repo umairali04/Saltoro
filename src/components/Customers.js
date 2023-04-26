@@ -11,11 +11,11 @@ function Customers() {
     <div className="services-main-container">
       <div className="container text-black">
         <div className="row  ml-1 ml-sm-0">
-          <div className="mt-5 mb-5">
+          <div className="mt-5 mb-3 mb-sm-1">
             <h5 className="d-flex justify-content-center font-weight-bold ">
               Trusted by companies across the world
             </h5>
-            <div className="d-flex align-items-center justify-content-between">
+            <div className="customers-logo">
               <img src={HeadGamesLogo} style={{width: "7rem", height:""}}/>
               <img src={MpTechLogo} style={{width: "8rem", height:"8rem"}}/>
               <img src={NexioLogo} style={{width: "10rem"}}/>

@@ -4,6 +4,7 @@ import Logo from './assets/SALTORO-001.png'
 function Footer() {
   return (
     // <!-- Footer -->
+    <div style={{backgroundColor: "#f1f0ef"}}>
 <footer className="container text-center text-lg-start text-muted">
   <div className='text-center'>
     <img src={Logo} className='footer-logo'/>
@@ -18,6 +19,7 @@ function Footer() {
   </div>
   {/* <!-- Copyright --> */}
 </footer>
+</div>
   )
 }
 

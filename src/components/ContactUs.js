@@ -78,11 +78,11 @@ function ContactUs() {
 {/* social icons */}
     <div className='text-center mt-5'>
     {/* <!-- Left --> */}
-      <span  className=" d-none d-lg-block">Connect with us</span>
+      <span >Connect with us</span>
     {/* <!-- Left --> */}
 
     {/* <!-- Right --> */}
-    <div className='d-flex justify-content-center gap-4 mt-3'>
+    <div className='d-flex justify-content-center gap-4 mt-3 mb-5'>
       <a href="" className="link-secondary">
         <i className="fab fa-facebook-f"></i>
       </a>

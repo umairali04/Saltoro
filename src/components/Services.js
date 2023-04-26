@@ -6,7 +6,7 @@ function Services() {
   return (
     <div className="services-main-container">
       <div className="container text-black">
-        <div className="row  ml-1 ml-sm-0">
+        <div className="row  ml-1 ml-sm-0 mr-sm-0 justify-content-center">
           <div className="mt-3 mb-5">
             <h5 className="font-weight-bold">How do we work?</h5>
             <p className="h5">
@@ -71,6 +71,7 @@ function Services() {
                 how involved you want to be in the development process.
               </p>
             </div>
+
           </div>
         </div>
       </div>
