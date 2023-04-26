@@ -47,6 +47,23 @@ body {
 
 .navbar-toggler{
   border: none !important;
+  margin-right: 5px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+  background-color: none !important;
+
+}
+.navbar-toggler:focus{
+  outline: none !important;
+}
+.navbar-collapse{
+  background-color: white !important;
+}
+
+button:hover{
+  background-color: none !important;
 }
 .abcd{
   max-width: 100vw;
@@ -116,11 +133,11 @@ body {
     border-color: grey;
 }
 
-button:hover{
+/* button:hover{
   color: white;
     background-color: #527ab5;
     border-color: #527ab5;
-}
+} */
 
 .arrow-img:hover{
   color: white;
@@ -170,8 +187,24 @@ button:hover{
     flex-direction: column !important;
   }
 }
-@media (max-width: 444px) {
+/* @media (max-width: 444px) {
   .services-main-container{
     margin-right: 18px;
   }
+} */
+
+@media (max-width: 769px) {
+  .head-games{
+    margin-top: 15px;
+  }
+  .nexio-logo{
+    margin-bottom: 20px;
+  }
+
+  .matrix-logo{
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
 }
+
+

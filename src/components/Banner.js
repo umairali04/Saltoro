@@ -4,13 +4,13 @@ import abcd from "../abcd.jpg";
 function BannerImage() {
   return (
     <div className="container margin-top">
-      <div className="container text-black d-flex justify-content-center align-item-center ">
+      {/* <div className="container text-black d-flex justify-content-center align-item-center ">
         <div className="row  ml-1 ml-sm-0">
           <div className="mt-5 mb-5">
             <h1 className="font-weight-bold">Saltoro Tech</h1>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="row  ml-1 ml-sm-0">
         <div className="mt-5">
