@@ -20,7 +20,7 @@ function Customers() {
               <img src={MpTechLogo} className="mp-tech-logo" style={{width: "8rem", height:"8rem"}}/>
               <img src={NexioLogo} className="nexio-logo" style={{width: "10rem"}}/>
               <img src={MatrixLogo} className="matrix-logo" style={{width: "6rem"}}/>
-              <img src={EndersgateLogo} className="endersgate-logo" style={{width: "15rem"}}/>
+              <img src={EndersgateLogo} className="endersgate-logo" style={{width: "16rem"}}/>
               </div>
           </div>
 

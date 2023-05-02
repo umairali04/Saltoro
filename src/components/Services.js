@@ -7,7 +7,7 @@ function Services() {
     <div className="services-main-container">
       <div className="container text-black">
         <div className="row  ml-1 ml-sm-0 mr-sm-0 justify-content-center">
-          <div className="mt-3 mb-5">
+          <div className="mt-3 mb-5 pl-0">
             <h5 className="font-weight-bold">How do we work?</h5>
             <p className="h5">
               We provide a framework for your idea, which serves as a solid

@@ -1,20 +1,24 @@
 import React from 'react'
-import Logo from './assets/SALTORO-001.png'
+import Logo from './assets/Saltoro-logo.png'
 
 function Footer() {
+
+  const year = new Date().getFullYear();
   return (
     // <!-- Footer -->
-    <div style={{backgroundColor: "#f1f0ef"}}>
+    <div className=' pb-3' style={{backgroundColor: "transparent"}}>
 <footer className="container text-center text-lg-start text-muted">
   <div className='text-center'>
-    <img src={Logo} className='footer-logo'/>
+    {/* <img src={Logo} className='footer-logo'/> */}
+    <h4 className='pt-2'>SALTORO TECH</h4>
+    {/* <text>LETS BUILD SOMETHING BIG TOGETHER</text> */}
   </div>
 
 
   {/* <!-- Section: Links  --> */}
   
   <div className="text-center">
-    © 2023 Copyright:
+    Copyright © {year} Saltoro Tech . All Rights Reserved.
     {/* <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> */}
   </div>
   {/* <!-- Copyright --> */}

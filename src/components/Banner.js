@@ -13,7 +13,7 @@ function BannerImage() {
       </div> */}
 
       <div className="row  ml-1 ml-sm-0">
-        <div className="mt-5">
+        <div className="mt-5 pl-0">
           <h5 className="font-weight-bold">About Us</h5>
           <p className="h5">
             We at Saltoro Tech believe that tech has the potential to change the

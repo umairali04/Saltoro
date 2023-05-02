@@ -11,21 +11,21 @@ function ContactUs() {
         </div>
       </div>
         <div className='d-flex justify-content-center align-center'>
-        <form>
+        <form action="https://formsubmit.co/mrumairali444@gmail.com" method="POST">
   <div class="form-row">
 
     <div class="form-group col-md-4">
       <label for="name">Full Name</label>
-      <input type="text" class="form-control" id="inputName" placeholder="Your Name"/>
+      <input type="text" class="form-control" id="inputName" name="name" placeholder="Your Name" required/>
     </div>
     <div class="form-group col-md-4">
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email"/>
+      <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" required/>
     </div>
 
     <div class="form-group col-md-4">
       <label for="inputPhone">Phone number</label>
-      <input type="phone" class="form-control" id="inputPhone" placeholder="Phone"/>
+      <input type="phone" class="form-control" id="inputPhone" name="phone" placeholder="Phone" required/>
     </div>
     
   </div>
@@ -35,31 +35,26 @@ function ContactUs() {
   <div class="form-row align-center">
     <div class="form-group col-md-4">
       <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity"/>
+      <input type="text" class="form-control" name="city" id="inputCity" required/>
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
+      <input type="text" class="form-control" name="state" id="inputZip" required/>
     </div>
     <div class="form-group col-md-4">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip"/>
+      <label for="inputZip" >Zip</label>
+      <input type="text" class="form-control" name="zip" id="inputZip"/>
     </div>
   </div>
 
   <div class="form-group col-md-12 textArea">
-    <label for="exampleFormControlTextarea1">Requirements</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+    <label for="exampleFormControlTextarea1" >Requirements</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="requirements" rows="8" required></textarea>
   </div>
 
   <div class="custom-file">
-  <label for="inputZip">Zip</label>
-
-  <label class="custom-file-label" for="customFile"  style={{cursor: "pointer"}}>Choose file</label>
-    <input type="file" class="custom-file-input" id="customFile"/>
+  <label class="custom-file-label col-md-4" for="customFile"  style={{cursor: "pointer"}} >Choose file</label>
+    <input type="file" class="custom-file-input" id="customFile" name="file" />
   </div>
 
   {/* <div class="form-group">
@@ -70,7 +65,7 @@ function ContactUs() {
       </label>
     </div>
   </div> */}
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>
 </div>
 
