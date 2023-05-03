@@ -1,6 +1,22 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
+
 
 function ContactUs() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_tp03yn8', 'template_zjv8w77', form.current, '1p_zfiW0UOnjx09GP')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert("Form Submitted successfully")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className='container'>
         <div className="container text-black d-flex justify-content-center align-item-center ">
@@ -11,21 +27,22 @@ function ContactUs() {
         </div>
       </div>
         <div className='d-flex justify-content-center align-center'>
-        <form action="https://formsubmit.co/mrumairali444@gmail.com" method="POST">
+        
+        <form ref={form} onSubmit={sendEmail}>
   <div class="form-row">
 
     <div class="form-group col-md-4">
       <label for="name">Full Name</label>
-      <input type="text" class="form-control" id="inputName" name="name" placeholder="Your Name" required/>
+      <input type="text" class="form-control" id="inputName" name="user_name" placeholder="Your Name" required/>
     </div>
     <div class="form-group col-md-4">
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" required/>
+      <input type="email" class="form-control" id="inputEmail4" name="user_email" placeholder="Email" required/>
     </div>
 
     <div class="form-group col-md-4">
       <label for="inputPhone">Phone number</label>
-      <input type="phone" class="form-control" id="inputPhone" name="phone" placeholder="Phone" required/>
+      <input type="phone" class="form-control" id="inputPhone" name="user_phone" placeholder="Phone" required/>
     </div>
     
   </div>
@@ -35,7 +52,7 @@ function ContactUs() {
   <div class="form-row align-center">
     <div class="form-group col-md-4">
       <label for="inputCity">City</label>
-      <input type="text" class="form-control" name="city" id="inputCity" required/>
+      <input type="text" class="form-control" name="user_city" id="inputCity" required/>
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">State</label>
@@ -49,7 +66,7 @@ function ContactUs() {
 
   <div class="form-group col-md-12 textArea">
     <label for="exampleFormControlTextarea1" >Requirements</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" name="requirements" rows="8" required></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="user_requirements" rows="8" required></textarea>
   </div>
 
   <div class="custom-file">
